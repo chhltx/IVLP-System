@@ -2,6 +2,7 @@
     <qresource prefix="/img">
         <file>map.jpg</file>
         <file>star.jpg</file>
+        <file>star.png</file>
     </qresource>
     <qresource prefix="/qss">
         <file>style.qss</file>

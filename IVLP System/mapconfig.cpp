@@ -18,7 +18,7 @@ void MainWindow::mapImportDialog(void)
         mapHeight = pixMap.height();
 
         //导入导航图标
-        if(!(pixStar.load(":/img/star.jpg")))
+        if(!(pixStar.load(":/img/star.png")))
         {
             qDebug() << tr("导航图标导入失败！");
         }
