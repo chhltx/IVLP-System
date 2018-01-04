@@ -60,8 +60,9 @@ void MainWindow::on_mapSetConfirm_clicked()
     mapOffset_y = ui->offsetYbox->value();
     mapDispRatio = ui->RatioBox->currentText().toFloat();
     QMessageBox::information(this, tr("提示对话框"), tr("设置成功"));
-    ui->serialFrame->move(screenWidth*mapDispRatio, mapOffset_x);
-    ui->mapSetFrame->move(screenWidth*mapDispRatio, 300);
-    ui->dataFrame->move(screenWidth*mapDispRatio, 500);
+    int x_origin  = mapDispRatio>0.8? screenWidth*0.8 : screenWidth*mapDispRatio;
+    ui->serialFrame->move(x_origin, mapOffset_y);
+    ui->mapSetFrame->move(x_origin, 300);
+    ui->dataFrame->move(x_origin, 500);
 }
 
